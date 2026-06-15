@@ -21,10 +21,6 @@ CREATE TABLE Users (
     email VARCHAR(100) UNIQUE,
     role VARCHAR(20) CHECK (role IN ('Ticket Manager','Football Fan')),
     phone_number VARCHAR(20)
-    
-    -- Write your constraint to make 'user_id' the Primary Key
-    -- Write your constraint to ensure 'email' values are never duplicated
-    -- Write your check constraint to restrict 'role' to specific allowed strings
 );
 
 -- =========================================================================
