@@ -34,9 +34,6 @@ CREATE TABLE Matches (
     base_ticket_price DECIMAL(10,2) CHECK( base_ticket_price >= 0),
     match_status VARCHAR(20) CHECK( match_status IN ('Available', 'Selling Fast', 'Sold Out', 'Postponed'))
     
-    -- Write your constraint to make 'match_id' the Primary Key
-    -- Write your check constraint to prevent negative ticket prices
-    -- Write your check constraint to restrict 'match_status' values
 );
 
 -- =========================================================================
