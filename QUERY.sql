@@ -48,11 +48,7 @@ CREATE TABLE Bookings (
     payment_status VARCHAR(20) CHECK( payment_status IN ('Pending', 'Confirmed', 'Cancelled', 'Refunded')),
     total_cost DECIMAL(10,2) CHECK( total_cost >= 0)
     
-    -- Write your constraint to make 'booking_id' the Primary Key
-    -- Write your Foreign Key constraint linking 'user_id' to the Users table
-    -- Write your Foreign Key constraint linking 'match_id' to the Matches table
-    -- Write your check constraint to ensure 'total_cost' is non-negative
-    -- Write your check constraint to restrict 'payment_status' values
+  
 );
 
 
